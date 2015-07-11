@@ -18,7 +18,7 @@
         考试科目：
         <input type="text" value="统一建模语言UML" id="kemu" name="userkemu" readonly="readonly">
         时间：
-        <input type="text" value="100分钟" readonly="readonly">
+        <input type="text" id="timer" readonly="readonly" value="100min">
         得分：
         <input type="text" id="sub_score" name="userscore" readonly="readonly">
 
@@ -45,8 +45,8 @@
       <br><br>
 
     <div><b>二、   选择题</b></div>
-      <span>1.&nbsp;UML与软件工程的关系是：[<span id="one_select_1"></span>]
-      </span>
+      <span>1.&nbsp;UML与软件工程的关系是：</span>
+          [<input type="text" id="one_select_1" size=1 readonly="readonly">]
       <br>
 
       <label for="oneselect">
@@ -59,22 +59,22 @@
         <input type="radio" id="fourselect" name="one_select_1" value="D">&nbsp;(D):UML是软件工程的一部分；</label><br>
 
       <br>
-    <span>2.&nbsp;java语言支持：[<span id="one_select"></span>]
-    </span>
+    <span>2.&nbsp;java语言支持：</span>
+        [<input type="text" id="one_select_2" size=1 readonly="readonly">]
       <br>
 
     <label for="fiveselect">
-      <input type="radio" id="fiveselect" name="one_select" value="A">&nbsp;(A):单继承；</label><br>
+      <input type="radio" id="fiveselect" name="one_select_2" value="A">&nbsp;(A):单继承；</label><br>
     <label for="sixselect">
-      <input type="radio" id="sixselect" name="one_select" value="B">&nbsp;(B):多继承；</label><br>
+      <input type="radio" id="sixselect" name="one_select_2" value="B">&nbsp;(B):多继承；</label><br>
     <label for="sevenselect">
-      <input type="radio" id="sevenselect" name="one_select" value="C">&nbsp;(C):单继承与多继承都支持；</label><br>
+      <input type="radio" id="sevenselect" name="one_select_2" value="C">&nbsp;(C):单继承与多继承都支持；</label><br>
     <label for="eightselect">
-      <input type="radio" id="eightselect" name="one_select" value="D">&nbsp;(D):单线程和多线程都不支持；</label><br><br>
+      <input type="radio" id="eightselect" name="one_select_2" value="D">&nbsp;(D):单线程和多线程都不支持；</label><br><br>
 
     <div><b>三、   多选题</b></div>
-    <span>1.&nbsp;用例的粒度分为以下那三种：[
-      <span id="check_box1"></span>]</span>
+    <span>1.&nbsp;用例的粒度分为以下那三种：</span>
+        [<input type="text" id="check_box1" size=4 readonly="readonly">]
         <br>
     <label for="checkbox1">
       <input id="checkbox1" type="checkbox" name="check_box1" class="check_box1" value="A">(A):概述级；</label>
@@ -89,8 +89,8 @@
       <input id="checkbox4" type="checkbox" name="check_box1" class="check_box1" value="D">(D):子功能级；</label>
         <br><br>
 
-    <span>2.&nbsp;类图由那三部分组成：[
-      <span id="check_box2"></span>]</span>
+    <span>2.&nbsp;类图由那三部分组成：</span>
+        [<input type="text" id="check_box2" size=4 readonly="readonly">]
         <br>
     <label for="checkbox5">
       <input type="checkbox" id="checkbox5" name="check_box2" class="check_box2" value="A">(A):名称（name）；</label>
@@ -123,7 +123,7 @@
 
   <div id="footer">
     <input id="submit" type="button" value="提交">
-    <input type="reset" value="重置">
+    <input id="reset" type="reset" value="重置">
     <div id="back"><a href="#top">top</a></div>
   </div>
 
